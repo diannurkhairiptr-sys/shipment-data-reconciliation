@@ -1,0 +1,24 @@
+-- 04_validation_queries.sql
+-- Optional checks for reviewing the fictional sample data.
+
+SELECT *
+FROM SHIPMENT_SOURCE
+ORDER BY DELIVERY_NUMBER;
+
+SELECT *
+FROM SHIPMENT_DATABASE
+ORDER BY SHIPMENT_ID, CARTON_ID;
+
+-- Inspect one shipment's database details:
+SELECT *
+FROM SHIPMENT_DATABASE
+WHERE SHIPMENT_ID = 'D00138228';
+
+-- Summarize carton count and quantity for one shipment:
+SELECT
+    SHIPMENT_ID,
+    COUNT(DISTINCT CARTON_ID) AS DATABASE_COLLI,
+    SUM(DATABASE_QTY) AS DATABASE_QTY
+FROM SHIPMENT_DATABASE
+WHERE SHIPMENT_ID = 'D00139263'
+GROUP BY SHIPMENT_ID;
