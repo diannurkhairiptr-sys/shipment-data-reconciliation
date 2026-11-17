@@ -1,4 +1,4 @@
--- 02_insert_sample_data.sql
+-- sql/02_insert_sample_data.sql
 -- All rows below are fictional sample data.
 
 INSERT INTO SHIPMENT_SOURCE VALUES ('D00138228', 1, 100);
