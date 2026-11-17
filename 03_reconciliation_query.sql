@@ -1,4 +1,4 @@
--- 03_reconciliation_query.sql
+-- sql/03_reconciliation_query.sql
 -- Compare source shipment totals with records in the shipment database.
 
 WITH C AS (
