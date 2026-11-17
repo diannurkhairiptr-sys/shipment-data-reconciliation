@@ -1,4 +1,4 @@
--- 01_create_tables.sql
+-- sql/01_create_tables.sql
 -- Fictional portfolio tables. Run in a schema where you have CREATE TABLE permission.
 
 CREATE TABLE SHIPMENT_SOURCE (
