@@ -1,4 +1,4 @@
--- 04_validation_queries.sql
+--sql/04_validation_queries.sql
 -- Optional checks for reviewing the fictional sample data.
 
 SELECT *
